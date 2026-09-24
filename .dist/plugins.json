@@ -3,7 +3,7 @@
     "id": "project-gutenberg",
     "name": "Project Gutenberg",
     "site": "https://www.gutenberg.org/",
-    "lang": "English",
+    "lang": "Portuguese",
     "version": "1.0.0",
     "url": "https://raw.githubusercontent.com/Dormindo/lnreader-gutenberg/main/gutenberg.js",
     "iconUrl": "https://raw.githubusercontent.com/Dormindo/lnreader-gutenberg/main/public/static/src/en/gutenberg/icon.png"

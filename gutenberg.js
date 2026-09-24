@@ -109,7 +109,7 @@ class GutenbergPlugin {
   async popularNovels(pageNo) {
     const page = Math.max(1, pageNo || 1);
     const data = await this.getBooks(
-      `${API}?languages=en&sort=popular&page=${page}`,
+      `${API}?languages=pt&sort=popular&page=${page}`,
     );
     return (data.results || []).map(bookItem);
   }
@@ -118,7 +118,7 @@ class GutenbergPlugin {
     if (!searchTerm?.trim()) return [];
     const page = Math.max(1, pageNo || 1);
     const q = encodeURIComponent(searchTerm.trim());
-    const data = await this.getBooks(`${API}?search=${q}&page=${page}`);
+    const data = await this.getBooks(`${API}?search=${q}&languages=pt&page=${page}`);
     return (data.results || []).map(bookItem);
   }
 
